@@ -8,7 +8,7 @@ public class KeranjangBelanja {
     }
 
     public void addItem(String item){
-        assert(count <= 5):"Keranjang belanja sudah penuh";
+        assert(count < keranjang.length):"Keranjang belanja sudah penuh";
         keranjang[count] = item;
         count = count + 1;
     }
